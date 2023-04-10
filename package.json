@@ -1,0 +1,19 @@
+{
+  "name": "com.spindler.unity.utilities",
+  "version": "0.0.1",
+  "displayName": "Spindlers Unity Utilities",
+  "description": "This is an utility package that contains only helpful scripts.",
+  "unity": "2022.2",
+  "unityRelease": "12f1",
+  "dependencies": {
+	},
+	"keywords": [
+		"Utility",
+		"DOTS"
+  ],
+  "author": {
+    "name": "Sören Spindler",
+    "email": "",
+    "url": ""
+  }
+}
