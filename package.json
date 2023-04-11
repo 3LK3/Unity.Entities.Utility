@@ -1,7 +1,7 @@
 {
-  "name": "party.elke.unity.utilities",
+  "name": "party.elke.unity.entities.utility",
   "version": "0.0.1",
-  "displayName": "3lk3 Unity Utilities",
+  "displayName": "3lk3 Unity Entities Utility",
   "description": "This is an utility package that contains only helpful scripts.",
   "unity": "2022.2",
   "unityRelease": "12f1",
@@ -19,7 +19,7 @@
     "url": ""
   },
 	"repository": {
-    "url": "https://github.com/3LK3/Unity.Utilities.git",
+    "url": "https://github.com/3LK3/Unity.Entities.Utility.git",
     "type": "git"
   }
 }

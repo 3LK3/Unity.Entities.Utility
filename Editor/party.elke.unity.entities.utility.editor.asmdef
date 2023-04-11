@@ -1,8 +1,8 @@
 {
-    "name": "com.spindler.unity.utilities.editor",
+    "name": "party.elke.unity.entities.utility.editor",
     "rootNamespace": "Spindler.Utilities.Editor",
     "references": [
-        "com.spindler.unity.utilities"
+        "party.elke.unity.entities.utility"
     ],
     "includePlatforms": [
         "Editor"
