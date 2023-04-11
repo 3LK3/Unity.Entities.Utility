@@ -1,5 +1,5 @@
 {
-    "name": "com.spindler.unity.utilities",
+    "name": "party.elke.unity.utilities",
     "rootNamespace": "Spindler.Utilities",
     "references": [
         "Unity.Collections",

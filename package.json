@@ -1,7 +1,7 @@
 {
-  "name": "com.spindler.unity.utilities",
+  "name": "party.elke.unity.utilities",
   "version": "0.0.1",
-  "displayName": "Spindlers Unity Utilities",
+  "displayName": "3lk3 Unity Utilities",
   "description": "This is an utility package that contains only helpful scripts.",
   "unity": "2022.2",
   "unityRelease": "12f1",
@@ -19,7 +19,7 @@
     "url": ""
   },
 	"repository": {
-    "url": "https://github.com/soeren-spindler/unity.utilities.git",
+    "url": "https://github.com/3LK3/Unity.Utilities.git",
     "type": "git"
   }
 }
