@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Spindler.Utilities
+namespace Elke.Entities.Utility.Attributes
 {
     [AttributeUsage(AttributeTargets.Field, AllowMultiple = false, Inherited = true)]
     public class ReadOnlyAttribute : PropertyAttribute

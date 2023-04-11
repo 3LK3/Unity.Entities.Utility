@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
 using System;
 using System.Reflection;
-using Spindler.Utilities.Extensions;
 using UnityEngine;
+using Elke.Entities.Utility.Attributes;
+using Elke.Entities.Utility.Extensions;
 
-namespace Spindler.Utilities.Entities
+namespace Elke.Entities.Utility
 {
     public static class CreateInWorldInitialization
     {
@@ -14,7 +15,7 @@ namespace Spindler.Utilities.Entities
             var worldSpecificSystems = GetWorldSpecificSystems(defaultWorldName);
 
             Debug.Log($"Creating world [{defaultWorldName}] with {worldSpecificSystems.Length} specific systems");
-            WorldUtilities.CreateWorld(defaultWorldName, worldSpecificSystems);
+            WorldUtility.CreateWorld(defaultWorldName, worldSpecificSystems);
         }
 
         private static Type[] GetWorldSpecificSystems(string worldName)

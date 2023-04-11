@@ -1,6 +1,6 @@
 {
     "name": "party.elke.unity.entities.utility.editor",
-    "rootNamespace": "Spindler.Utilities.Editor",
+    "rootNamespace": "Elke.Entities.Utility.Editor",
     "references": [
         "party.elke.unity.entities.utility"
     ],

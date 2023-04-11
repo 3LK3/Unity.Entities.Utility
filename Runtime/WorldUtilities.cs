@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using Unity.Entities;
 using UnityEngine;
+using Unity.Entities;
 
-namespace Spindler.Utilities.Entities
+namespace Elke.Entities.Utility
 {
-    public class WorldUtilities
+    public class WorldUtility
     {
         public static World CreateWorld(string defaultWorldName, params Type[] customSystems)
         {

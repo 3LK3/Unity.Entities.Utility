@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Spindler.Utilities
+namespace Elke.Entities.Utility
 {
     /// <summary>
     /// Base class for singleton MonoBehaviour.

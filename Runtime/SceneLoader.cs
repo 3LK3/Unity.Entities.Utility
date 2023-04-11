@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Spindler.Utilities
+namespace Elke.Entities.Utility
 {
     public class SceneLoader : MonoBehaviour
     {

@@ -1,9 +1,9 @@
 ﻿using UnityEditor;
 using UnityEngine;
+using Elke.Entities.Utility.Attributes;
 
-namespace Spindler.Utilities.Editor
+namespace Elke.Entities.Utility.Editor
 {
-
     [CustomPropertyDrawer(typeof(ReadOnlyAttribute))]
     public class ReadOnlyPropertyDrawer : PropertyDrawer
     {

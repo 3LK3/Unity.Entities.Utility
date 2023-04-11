@@ -1,9 +1,9 @@
 ﻿using TMPro;
 using UnityEngine;
 
-namespace Spindler.Utilities
+namespace Elke.Entities.Utility
 {
-    public class FramesPerSecondController : MonoBehaviour
+    public class FramesPerSecond : MonoBehaviour
     {
         public TMP_Text Text;
         public float UpdateInterval = 0.1f;
@@ -15,16 +15,6 @@ namespace Spindler.Utilities
         private void Awake()
         {
             m_FrameDeltaTimes = new float[50];
-        }
-
-        private void OnEnable()
-        {
-            Debug.Log("FramesPerSecondController :: OnEnable");
-        }
-
-        private void OnDisable()
-        {
-            Debug.Log("FramesPerSecondController :: OnDisable");
         }
 
         private void Update()

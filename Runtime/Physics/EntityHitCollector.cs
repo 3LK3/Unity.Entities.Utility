@@ -1,7 +1,7 @@
 ﻿using Unity.Entities;
 using Unity.Physics;
 
-namespace Spindler.Utilities.Physics
+namespace Elke.Entities.Utility.Physics
 {
     public struct EntityHitCollector<T> : ICollector<T> where T : struct, IQueryResult
     {

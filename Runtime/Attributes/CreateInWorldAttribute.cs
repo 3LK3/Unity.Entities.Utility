@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Spindler.Utilities.Entities
+namespace Elke.Entities.Utility.Attributes
 {
     /// <summary>
     /// Attribute to specify the entity worlds a system should be created in.

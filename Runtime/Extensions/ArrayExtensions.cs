@@ -1,8 +1,8 @@
-﻿namespace Spindler.Utilities.Extensions
+﻿namespace Elke.Entities.Utility.Extensions
 {
     public static class ArrayExtensions
     {
-        public static bool Contains<T>(this T[] array, T containsItem) // where T : class, IEqualityComparer<T>
+        public static bool Contains<T>(this T[] array, T containsItem)
         {
             foreach (var item in array)
             {
