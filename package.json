@@ -6,6 +6,8 @@
   "unity": "2022.2",
   "unityRelease": "12f1",
   "dependencies": {
+		"com.unity.entities": "1.0.0-pre.65",
+		"com.unity.physics": "1.0.0-pre.65"
 	},
 	"keywords": [
 		"Utility",
@@ -15,5 +17,9 @@
     "name": "Sören Spindler",
     "email": "",
     "url": ""
+  },
+	"repository": {
+    "url": "https://github.com/soeren-spindler/unity.utilities.git",
+    "type": "git"
   }
 }

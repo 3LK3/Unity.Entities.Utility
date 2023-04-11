@@ -2,7 +2,7 @@
     "name": "com.spindler.unity.utilities.editor",
     "rootNamespace": "Spindler.Utilities.Editor",
     "references": [
-        "GUID:7a1d4bb4f21c7614d9791152a29c990c"
+        "com.spindler.unity.utilities"
     ],
     "includePlatforms": [
         "Editor"
