@@ -2,7 +2,7 @@ name: Create and publish a release
 on:
   workflow_dispatch:
     inputs:
-      message:
+      version:
         required: true
       
 jobs:
