@@ -20,6 +20,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Create Release Tag
         uses: rickstaa/action-create-tag@v1
+        with:
           tag: "release-${{ github.event.inputs.version }}"
       #- name: Release
       #  uses: softprops/action-gh-release@v1
