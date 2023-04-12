@@ -18,9 +18,12 @@ jobs:
   example:
     name: Create & Publish Release
     runs-on: ubuntu-latest
-    env:
-      REPO_NAME: ${GITHUB_REPOSITORY#$GITHUB_REPOSITORY_OWNER/}
     steps:
+    
+      - name: Set ENV variables
+        run: |
+            echo "REPO_NAME=${GITHUB_REPOSITORY#$GITHUB_REPOSITORY_OWNER/}" >> $GITHUB_ENV    
+      
       - name: Clone Repository
         uses: actions/checkout@v3
         with:
