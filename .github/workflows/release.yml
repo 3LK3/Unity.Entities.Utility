@@ -18,11 +18,19 @@ jobs:
     steps:
       - name: Clone Repository
         uses: actions/checkout@v3
-      - name: Create Release Tag
-        uses: rickstaa/action-create-tag@v1
-        with:
-          tag: "release-${{ github.event.inputs.version }}"
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Create & Push Release Tag
+        run: |
+          git tag "release-${{ github.event.inputs.version }}"
+          git push
+                
+      #- name: Create Release Tag
+      #  uses: rickstaa/action-create-tag@v1
+      #  with:
+      #    tag: "release-${{ github.event.inputs.version }}"
+      #    github_token: ${{ secrets.GITHUB_TOKEN }}
+          
+          
+          
       #- name: Release
       #  uses: softprops/action-gh-release@v1
       #  with:
