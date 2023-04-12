@@ -5,8 +5,7 @@
 ### Via Package Manager Window
 
 - Open the Unity package manager via **Window** -> **Package Manager**.<br>
-- Click the plus icon on the top left
-- Choose **Add package from git URL** 
+- Click the plus icon on the top left and select **Add package from git URL** 
 - Use `https://github.com/3LK3/Unity.Entities.Utility.git` as URL.
 
 ### Via manifest.json
