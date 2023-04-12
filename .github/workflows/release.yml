@@ -20,26 +20,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     
-      - name: Set ENV variables
-        run: |
-          echo "ARCHIVE_NAME=${GITHUB_REPOSITORY#$GITHUB_REPOSITORY_OWNER/}-${{ github.event.inputs.version }}.tar.gz" >> $GITHUB_ENV    
-      
       - name: Clone Repository
         uses: actions/checkout@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           
-      - name: Create Release Tarball
-        run: |
-          tar --exclude="./.git*" -czvf /tmp/${{ env.ARCHIVE_NAME }} *
-      
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
           name: ${{ github.event.inputs.version }}
-          tag_name: "release-${{ github.event.inputs.version }}"
+          tag_name: ${{ github.event.inputs.version }}
           prerelease: ${{ github.event.inputs.prerelease }}
           draft: ${{ github.event.inputs.draft }}
           token: ${{ secrets.GITHUB_TOKEN }}
-          files: |
-            /tmp/${{ env.ARCHIVE_NAME }}
