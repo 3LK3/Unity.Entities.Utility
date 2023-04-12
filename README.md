@@ -29,3 +29,18 @@ Add the repository as a dependency manually to your `<YourProject>/Packages/mani
 ```
 
 You can choose a specific version [from this list](https://github.com/3LK3/Unity.Entities.Utility/releases).
+
+
+## Project development
+
+### Documentation
+
+You can build and view this documentation project locally - we recommend that you activate `a local Python virtual environment first <https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment>`_:
+
+```bash
+    # Install required Python dependencies (Sphinx etc.)
+    pip install -r Docs~/requirements.txt
+
+    # Run Jupyter Book
+    jupyter-book build Docs~/
+```

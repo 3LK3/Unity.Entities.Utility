@@ -59,7 +59,7 @@ sysinfo.txt
 crashlytics-build.properties
 
 
-/docs/conf.py
-/docs/_build
+/Docs~/conf.py
+/Docs~/_build
 
 .idea

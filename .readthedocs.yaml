@@ -7,8 +7,8 @@ build:
     python: "3.10"
   jobs:
     pre_build:
-      - "jupyter-book config sphinx Docs/"
+      - "jupyter-book config sphinx Docs~/"
 
 python:
   install:
-    - requirements: Docs/requirements.txt
+    - requirements: Docs~/requirements.txt

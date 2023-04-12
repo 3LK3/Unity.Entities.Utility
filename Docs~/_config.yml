@@ -23,7 +23,7 @@ latex:
 # Information about where the book exists on the web
 repository:
   url: https://github.com/3LK3/Unity.Entities.Utility
-  path_to_book: Docs  # Optional path to your book, relative to the repository root
+  path_to_book: Docs~  # Optional path to your book, relative to the repository root
   branch: main  # Which branch of the repository should be used when creating links (optional)
 
 # Add GitHub buttons to your book
