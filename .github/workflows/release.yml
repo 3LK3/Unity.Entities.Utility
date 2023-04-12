@@ -48,7 +48,6 @@ jobs:
 
       - name: Create Documentation
         run: |
-          apt-get install python3
           pip install -r Docs~/requirements.txt
           jupyter-book config sphinx Docs~/
           sphinx-build Docs~/ Docs~/_build/html -b html
