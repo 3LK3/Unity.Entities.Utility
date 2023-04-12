@@ -14,13 +14,12 @@ on:
         
 permissions: write-all
 
-env:
-  REPO_NAME: ${GITHUB_REPOSITORY#$GITHUB_REPOSITORY_OWNER/}
-
 jobs:
   example:
     name: Create & Publish Release
     runs-on: ubuntu-latest
+    env:
+      REPO_NAME: ${GITHUB_REPOSITORY#$GITHUB_REPOSITORY_OWNER/}
     steps:
       - name: Clone Repository
         uses: actions/checkout@v3
