@@ -7,15 +7,8 @@ build:
     python: "3.10"
   jobs:
     pre_build:
-      # Generate on-the-fly Sphinx configuration from Jupyter Book's _config.yml
       - "jupyter-book config sphinx Docs/"
 
 python:
-   install:
-   - requirements: Docs/requirements.txt
-#   - method: pip
-#     path: .
-
-formats:
-  - pdf
-  - epub
+  install:
+    - requirements: Docs/requirements.txt
