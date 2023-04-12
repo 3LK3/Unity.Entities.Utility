@@ -31,7 +31,8 @@ jobs:
           
       - name: Create Release Tarball
         run: |
-          tar -czvf $REPO_NAME.tar.gz ./
+          echo "REPO_NAME: $REPO_NAME"
+          # tar -czvf $REPO_NAME.tar.gz ./
       
       - name: Create Release
         uses: softprops/action-gh-release@v1
