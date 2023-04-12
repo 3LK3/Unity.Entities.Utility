@@ -10,7 +10,9 @@ on:
         type: boolean
         default: false        
         description: 'Is this a pre-release version?'
+        
 permissions: write-all
+
 jobs:
   example:
     name: Publish Release
@@ -23,15 +25,7 @@ jobs:
       - name: Create & Push Release Tag
         run: |
           git tag "release-${{ github.event.inputs.version }}"
-          git push
-                
-      #- name: Create Release Tag
-      #  uses: rickstaa/action-create-tag@v1
-      #  with:
-      #    tag: "release-${{ github.event.inputs.version }}"
-      #    github_token: ${{ secrets.GITHUB_TOKEN }}
-          
-          
+          git push origin --tags
           
       #- name: Release
       #  uses: softprops/action-gh-release@v1
