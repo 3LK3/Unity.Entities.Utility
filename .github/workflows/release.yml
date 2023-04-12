@@ -8,6 +8,9 @@ on:
       prerelease:
         type: boolean
         default: false
+      draft:
+        type: boolean
+        default: false
         
 permissions: write-all
 
@@ -15,21 +18,16 @@ jobs:
   example:
     name: Create & Publish Release
     runs-on: ubuntu-latest
-   # env:
-     # VERSION_TAG: "release-${{ github.event.inputs.version }}"
     steps:
       - name: Clone Repository
         uses: actions/checkout@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-      #- name: Create & Push Release Tag
-      #  run: |
-       #   git tag "$VERSION_TAG"
-      #    git push origin --tags
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
           name: ${{ github.event.inputs.version }}
           tag_name: "release-${{ github.event.inputs.version }}"
           prerelease: ${{ github.event.inputs.prerelease }}
+          draft: ${{ github.event.inputs.draft }}
           token: ${{ secrets.GITHUB_TOKEN }}
