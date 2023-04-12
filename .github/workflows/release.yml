@@ -19,7 +19,8 @@ jobs:
       - name: Clone Repository
         uses: actions/checkout@v3
       - name: Create Release Tag
-        run: git tag "release-${{ github.event.inputs.version }}"
+        uses: rickstaa/action-create-tag@v1
+          tag: "release-${{ github.event.inputs.version }}"
       #- name: Release
       #  uses: softprops/action-gh-release@v1
       #  with:
