@@ -20,4 +20,4 @@ Add the repository as a dependency manually to your `<YourProject>/Packages/mani
 }
 ```
 
-Choose a version [from this list](https://github.com/3LK3/Unity.Entities.Utility/releases).
+You can choose a specific version [from this list](https://github.com/3LK3/Unity.Entities.Utility/releases).
