@@ -5,14 +5,11 @@ on:
       version:
         type: string
         required: true
+        description: 'Specify a version (e.g. 1.0.23)'
       prerelease:
         type: boolean
-        default: false
-      environment:
-        description: 'Environment to run tests against'
-        type: environment
-        required: true
-        
+        default: false        
+        description: 'Is this a pre-release version?'
       
 jobs:
   example:
