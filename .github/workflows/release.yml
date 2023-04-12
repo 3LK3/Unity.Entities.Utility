@@ -24,12 +24,12 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Create & Push Release Tag
         run: |
-          git tag $VERSION_TAG
+          git tag "$VERSION_TAG"
           git push origin --tags
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
           name: ${{ github.event.inputs.version }}
-          tag_name: $VERSION_TAG
+          tag_name: "$VERSION_TAG"
           prerelease: ${{ github.event.inputs.prerelease }}
           token: ${{ secrets.GITHUB_TOKEN }}
