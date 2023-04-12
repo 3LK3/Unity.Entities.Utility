@@ -5,6 +5,8 @@
 Have a look at the full documentation here: <br>
 [https://3lk3-unityentitesutility.readthedocs.io/en/latest/](https://3lk3-unityentitesutility.readthedocs.io/en/latest/)
 
+There also is an [example project](https://github.com/3LK3/Unity.Entities.Utility.Examples) demonstrating the main features.
+
 ## Installation
 
 ### Via Package Manager Window
