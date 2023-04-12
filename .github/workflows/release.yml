@@ -31,7 +31,7 @@ jobs:
           
       - name: Create Release Tarball
         run: |
-          tar --exclude={"./.git*", "./${{ env.ARCHIVE_NAME }}"} -czvf "${{ env.ARCHIVE_NAME }}" . 
+          tar --exclude="./.git*" -czvf /tmp/${{ env.ARCHIVE_NAME }} . 
       
       - name: Create Release
         uses: softprops/action-gh-release@v1
@@ -42,4 +42,4 @@ jobs:
           draft: ${{ github.event.inputs.draft }}
           token: ${{ secrets.GITHUB_TOKEN }}
           files: |
-            ${{ env.ARCHIVE_NAME }}
+            /tmp/${{ env.ARCHIVE_NAME }}
