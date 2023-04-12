@@ -1,7 +1,5 @@
 # 3lk3 Unity.Entities.Utility
 
-[![Documentation Status](https://readthedocs.org/projects/3lk3-unityentitesutility/badge/?version=latest)](https://3lk3-unityentitesutility.readthedocs.io/en/latest/?badge=latest)
-
 Have a look at the full documentation here: <br>
 [https://3lk3-unityentitesutility.readthedocs.io/en/latest/](https://3lk3-unityentitesutility.readthedocs.io/en/latest/)
 
