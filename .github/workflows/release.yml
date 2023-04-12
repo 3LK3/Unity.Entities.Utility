@@ -18,7 +18,10 @@ jobs:
     steps:
       - name: Clone Repository
         uses: actions/checkout@v3
-      - name: Release
-        uses: softprops/action-gh-release@v1
-        with:
-          name: ${{ github.event.inputs.version }}
+      - name: Create Release Tag
+        run: git tag "release-${{ github.event.inputs.version }}"
+      #- name: Release
+      #  uses: softprops/action-gh-release@v1
+      #  with:
+      #    name: ${{ github.event.inputs.version }}
+      #    prerelease: ${{ github.event.inputs.prerelease }}
