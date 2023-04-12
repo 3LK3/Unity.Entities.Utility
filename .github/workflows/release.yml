@@ -31,7 +31,7 @@ jobs:
           
       - name: Create Release Tarball
         run: |
-          tar --exclude='./.git*' -czvf ${{ env.ARCHIVE_NAME }} .
+          tar --exclude='./.git*' -czvf "${{ env.ARCHIVE_NAME }}" .
       
       - name: Create Release
         uses: softprops/action-gh-release@v1
