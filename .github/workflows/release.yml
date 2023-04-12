@@ -22,7 +22,7 @@ jobs:
     
       - name: Set ENV variables
         run: |
-          echo "REPO_NAME=${GITHUB_REPOSITORY#$GITHUB_REPOSITORY_OWNER/}" >> $GITHUB_ENV    
+          echo "ARCHIVE_NAME=${GITHUB_REPOSITORY#$GITHUB_REPOSITORY_OWNER/}-${{ github.event.inputs.version }}.tar.gz" >> $GITHUB_ENV    
       
       - name: Clone Repository
         uses: actions/checkout@v3
@@ -31,7 +31,7 @@ jobs:
           
       - name: Create Release Tarball
         run: |
-          tar --exclude='./.git*' -czvf ${{ env.REPO_NAME }}.tar.gz .
+          tar --exclude='./.git*' -czvf ${{ env.ARCHIVE_NAME }} .
       
       - name: Create Release
         uses: softprops/action-gh-release@v1
@@ -42,4 +42,4 @@ jobs:
           draft: ${{ github.event.inputs.draft }}
           token: ${{ secrets.GITHUB_TOKEN }}
           files: |
-            ${{ env.REPO_NAME }}.tar.gz
+            ${{ env.ARCHIVE_NAME }}
