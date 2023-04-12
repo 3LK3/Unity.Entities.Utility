@@ -1,21 +1,19 @@
-name: Create and publish a release
+name: Release
 on:
   workflow_dispatch:
     inputs:
       version:
         type: string
         required: true
-        description: 'Specify a version (e.g. 1.0.23)'
       prerelease:
         type: boolean
-        default: false        
-        description: 'Is this a pre-release version?'
+        default: false
         
 permissions: write-all
 
 jobs:
   example:
-    name: Publish Release
+    name: Create & Publish Release
     runs-on: ubuntu-latest
     steps:
       - name: Clone Repository
@@ -26,9 +24,9 @@ jobs:
         run: |
           git tag "release-${{ github.event.inputs.version }}"
           git push origin --tags
-          
-      #- name: Release
-      #  uses: softprops/action-gh-release@v1
-      #  with:
-      #    name: ${{ github.event.inputs.version }}
-      #    prerelease: ${{ github.event.inputs.prerelease }}
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          name: ${{ github.event.inputs.version }}
+          prerelease: ${{ github.event.inputs.prerelease }}
+          token: ${{ secrets.GITHUB_TOKEN }}
