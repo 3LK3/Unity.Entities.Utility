@@ -10,7 +10,7 @@ on:
         type: boolean
         default: false        
         description: 'Is this a pre-release version?'
-permissions: write-all
+# permissions: write-all
 jobs:
   example:
     name: Publish Release
