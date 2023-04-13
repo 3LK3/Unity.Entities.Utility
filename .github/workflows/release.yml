@@ -39,6 +39,9 @@ jobs:
     name: Create & Publish Documentation
     runs-on: ubuntu-latest
     needs: create-release
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
 
       - name: Clone Repository
@@ -47,13 +50,20 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create Documentation
-        run: |
-          pip install -r Docs~/requirements.txt
-          jupyter-book config sphinx Docs~/
-          sphinx-build Docs~/ Docs~/_build/html -b html
-          
-      - name: Publish Documentation
-        uses: peaceiris/actions-gh-pages@v3
+        uses: nikeee/docfx-action@v1.0.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: Docs~/_build/html
+          args: ./Docs~/docfx.json
+      
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          # Upload entire repository
+          path: ./Docs~/_site/
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
+
