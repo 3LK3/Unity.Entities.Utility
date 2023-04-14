@@ -2,3 +2,12 @@
   href: index.md
 - name: Installation
   href: installation.md
+- name: How to use
+  expanded: true
+  items:
+  - name: Basis Singleton
+    href: base-singleton.md
+  - name: ReadOnly fields in Inspector
+    href: readonly-attribute.md
+  - name: Display frames per second
+    href: frames-per-second.md

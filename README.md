@@ -1,7 +1,7 @@
 # 3lk3 Unity.Entities.Utility
 
 Have a look at the full documentation here: <br>
-[https://3lk3-unityentitesutility.readthedocs.io/en/latest/](https://3lk3-unityentitesutility.readthedocs.io/en/latest/)
+[https://3lk3.github.io/Unity.Entities.Utility](https://3lk3.github.io/Unity.Entities.Utility)
 
 There also is an [example project](https://github.com/3LK3/Unity.Entities.Utility.Examples) demonstrating the main features.
 

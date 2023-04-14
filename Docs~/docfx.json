@@ -1,6 +1,14 @@
 {
   "metadata": [
-    {
+    {      
+      "dest": "api",
+      "includePrivateMembers": false,
+      "disableGitFeatures": true,
+      "disableDefaultFilter": false,
+      "noRestore": true,
+      "namespaceLayout": "flattened",
+      "memberLayout": "samePage",
+      "allowCompilationErrors": true,
       "src": [
         {
           "files": [
@@ -9,18 +17,13 @@
           ],
           "src": ".."
         }
-      ],
-      "dest": "api",
-      "includePrivateMembers": false,
-      "disableGitFeatures": true,
-      "disableDefaultFilter": false,
-      "noRestore": true,
-      "namespaceLayout": "flattened",
-      "memberLayout": "samePage",
-      "allowCompilationErrors": true
+      ]
     }
   ],
   "build": {
+    "dest": "_site",
+    "keepFileLink": false,
+    "disableGitFeatures": true,
     "content": [
       {
         "files": [
@@ -44,20 +47,13 @@
         ]
       }
     ],
-    "dest": "_site",
     "globalMetadata": {
       "_appTitle": "3lk3 Unity.Entities.Utility"
     },
-    "fileMetadata": {
-      "redirect_url": {
-        "index.md": "getting-started/index.html"
-      }
-    },
     "template": [
-      "default"
+      "default",
+      "modern"
     ],
-    "keepFileLink": false,
-    "disableGitFeatures": true,
     "xref": [
       "https://normanderwan.github.io/UnityXrefMaps/xrefmap.yml"
     ]
